@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #333;
+    }
+
+    .gallery {
+      display: grid;
+      
+      gap: 20px;
+      padding: 10px;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.4s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+    .display{
+        display: flex;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Gallery</h1>
+  </header>
+
+  <div class="gallery">
+      
+    <div class="gallery-item"><img src="cse_plac.jpeg" alt="Image 2" /></div>
+    <div class="gallery-item"><img src="cse_plac2.jpeg" alt="Image 3" /></div>
+    <div class="gallery-item"><img src="cse_plac3.jpeg" alt="Image 4" /></div>
+    <div class="gallery-item"><img src="cse_plac4.jpeg" alt="Image 5" /></div>
+    <div class="gallery-item"><img src="cse_plac5.jpeg" alt="Image 6" /></div>
+    <div class="gallery-item display"><video autoplay loop muted playsinline src="cse_plac6.mp4"></video>
+        <div class="gallery-item display"><video autoplay loop muted playsinline src="cse_plac8.mp4"></video>
+            <div class="gallery-item display"><video autoplay loop muted playsinline src="cse_plac7.mp4"></video>
+  </div>
+</body>
+</html>
